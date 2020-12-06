@@ -40,4 +40,14 @@
     <string name="newcodedesc">Press the button below to generate a code to host a private study room!</string>
     <string name="sampleroomcode">000000</string>
     <string name="entercodeprompt">Please enter your room code:</string>
+    <string name="my_goals">MY GOALS</string>
+    <string name="user2_goals">USER 2\apos;s GOALS</string>
+    <string name="share_rm">USER 3\apos;s GOALS</string>
+    <string name="user3_goals">USER 3\apos;s GOALS</string>
+    <string name="enter_ans">Enter your answer to the prompts</string>
+    <string name="add">ADD</string>
+    <string name="add_symb">Add Symbol</string>
+    <string name="add_goal">ADD A GOAL</string>
+    <string name="text_goal">Goal needed to be accomplished</string>
+    <string name="text_user_name">Name of user who needs to complete the goal</string>
 </resources>

@@ -21,8 +21,5 @@ public class ScreenTwo extends Activity {
 
         getWindow().setLayout((int) (width*.9), (int) (height*.4));
 
-
-
-
     }
 }

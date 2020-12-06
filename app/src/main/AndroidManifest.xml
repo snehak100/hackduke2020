@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WOCO">
-        <activity android:name=".screen9"></activity>
+        <activity android:name=".ScreenTen"></activity>
+        <activity android:name=".ScreenSeven" />
+        <activity android:name=".ScreenFive" />
+        <activity android:name=".ScreenFour" />
+        <activity android:name=".ScreenTwo" />
+        <activity android:name=".screen9" />
         <activity android:name=".screen13" />
         <activity android:name=".screen12" />
         <activity android:name=".screen11" />

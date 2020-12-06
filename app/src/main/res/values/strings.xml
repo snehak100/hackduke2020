@@ -27,4 +27,17 @@
     <string name="time_dig9">9</string>
     <string name="colon">:</string>
     <string name="timer_button">SET</string>
+    <string name="enter_rm_btn">Enter Room</string>
+    <string name="message_prompt">MESSAGE</string>
+    <string name="goal1">goal1</string>
+    <string name="goal2">goal2</string>
+    <string name="goal3">goal3</string>
+    <string name="mygoals">My Goals</string>
+    <string name="msgtextprompt">Feel free to attach a short note with your ping!</string>
+    <string name="msgsendprompt">Send</string>
+    <string name="usermsg">[insert user msg]</string>
+    <string name="newcodetxt">generate</string>
+    <string name="newcodedesc">Press the button below to generate a code to host a private study room!</string>
+    <string name="sampleroomcode">000000</string>
+    <string name="entercodeprompt">Please enter your room code:</string>
 </resources>

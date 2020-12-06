@@ -14,4 +14,17 @@
     <string name="incoming_msg2">[insert msg]</string>
     <string name="timer_up1">Time Goal Completed!</string>
     <string name="timer_up2">Take a break!</string>
+    <string name="timer_title">Set Group Timer</string>
+    <string name="time_dig0">0</string>
+    <string name="time_dig1">1</string>
+    <string name="time_dig2">2</string>
+    <string name="time_dig3">3</string>
+    <string name="time_dig4">4</string>
+    <string name="time_dig5">5</string>
+    <string name="time_dig6">6</string>
+    <string name="time_dig7">7</string>
+    <string name="time_dig8">8</string>
+    <string name="time_dig9">9</string>
+    <string name="colon">:</string>
+    <string name="timer_button">SET</string>
 </resources>

@@ -2,4 +2,16 @@
     <string name="app_name">WOCO</string>
     <string name="create_rm_btn">Create Room</string>
     <string name="join_rm_btn">Join Room</string>
+    <string name="congrats_title">CONGRATULATIONS!</string>
+    <string name="congrats_msg1">Each group member has finished one of their goals!</string>
+    <string name="congrats_msg2">Your group has completed 50% of your total goals!</string>
+    <string name="congrats_msg3">Your group has completed 100% of your total goals!</string>
+    <string name="congrats_msg4">That\'s something to be proud of! Keep up the great work!</string>
+    <string name="congrats_msg5">That\'s something to be proud of! You can still add more goals if
+        you want, or you can wrap up the session and leave the room. Great work!</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="incoming_msg1">[insert user] has a message!</string>
+    <string name="incoming_msg2">[insert msg]</string>
+    <string name="timer_up1">Time Goal Completed!</string>
+    <string name="timer_up2">Take a break!</string>
 </resources>

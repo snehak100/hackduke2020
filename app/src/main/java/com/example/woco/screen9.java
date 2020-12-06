@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class screen9 extends AppCompatActivity {
 
     Button upTenMin, downTenMin, upMin, downMin, upTenSec, downTenSec, upSec, downSec, setTimeBtn;
@@ -20,15 +18,15 @@ public class screen9 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen9);
 
-        upTenMin = (Button)findViewById(R.id.button3);
-        downTenMin = (Button)findViewById(R.id.button10);
-        upMin = (Button)findViewById(R.id.button6);
-        downMin = (Button)findViewById(R.id.button9);
-        upTenSec = (Button)findViewById(R.id.button5);
-        downTenSec = (Button)findViewById(R.id.button8);
-        upSec = (Button)findViewById(R.id.button4);
-        downSec = (Button)findViewById(R.id.button7);
-        setTimeBtn = (Button)findViewById(R.id.button11);
+        upTenMin = (Button)findViewById(R.id.button2_1);
+        downTenMin = (Button)findViewById(R.id.button9_8);
+        upMin = (Button)findViewById(R.id.button3_4);
+        downMin = (Button)findViewById(R.id.button9_7);
+        upTenSec = (Button)findViewById(R.id.button3_3);
+        downTenSec = (Button)findViewById(R.id.button9_6);
+        upSec = (Button)findViewById(R.id.button3_2);
+        downSec = (Button)findViewById(R.id.button4_2);
+        setTimeBtn = (Button)findViewById(R.id.button9_9);
         tenMinDig = (TextView)findViewById(R.id.textView13);
         minDig = (TextView)findViewById(R.id.textView18);
         tenSecDig = (TextView)findViewById(R.id.textView19);

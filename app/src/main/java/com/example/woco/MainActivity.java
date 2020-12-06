@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 // for opening screen 2 from screen 1
-        Button j = (Button) findViewById(R.id.button2);
+        Button j = (Button) findViewById(R.id.button1_2);
 
         j.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,9 +14,9 @@ public class ScreenFour extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 // for opening screen 5 from screen 4
-        Button m1 = (Button) findViewById(R.id.button5);
-        Button m2 = (Button) findViewById(R.id.button6);
-        Button m3 = (Button) findViewById(R.id.button7);
+        Button m1 = (Button) findViewById(R.id.button3_3);
+        Button m2 = (Button) findViewById(R.id.button3_4);
+        Button m3 = (Button) findViewById(R.id.button4_2);
 
         m1.setOnClickListener(new View.OnClickListener() {
             @Override

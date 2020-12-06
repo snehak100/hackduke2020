@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "879020505176",
+    "firebase_url": "https://woco-9ac48-default-rtdb.firebaseio.com",
+    "project_id": "woco-9ac48",
+    "storage_bucket": "woco-9ac48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879020505176:android:2f89b4b9ba59e1844d722d",
+        "android_client_info": {
+          "package_name": "com.example.woco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879020505176-5mic2nk9htr3b7m1itv22hcb9qlesrbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7nnWLvphChuEvZcCW1k9iPOJ-lnqQgno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879020505176-5mic2nk9htr3b7m1itv22hcb9qlesrbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        removeDataFromDatabase();
 // for opening screen 2 from screen 1
         Button j = findViewById(R.id.button1_2);
         Button create = findViewById(R.id.button1_1);
@@ -69,13 +71,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
-    private void createUser(String name) {
-        User user = new User(name, new ArrayList<String>());
-
-        mDatabase.child("rooms").child(roomID).child("users").child(name).setValue(user);
-    }
 
     private void createRoom() {
 
@@ -96,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
         };
         mDatabase.child("rooms").child(roomID).addValueEventListener(roomListener);
 
+        mDatabase.child("rooms").child(roomID).child("timer").setValue(0);
+
+
+
     }
 
     private void joinRoom() {
@@ -115,6 +118,11 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         mDatabase.addValueEventListener(roomListener);
+    }
+
+    private void removeDataFromDatabase(){
+        DatabaseReference root = FirebaseDatabase.getInstance().getReference();
+        root.setValue(null);
     }
 
 }

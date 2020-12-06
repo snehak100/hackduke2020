@@ -5,14 +5,13 @@ import java.util.ArrayList;
 public class User {
 
     public String name;
-    public ArrayList<String> todo;
 
     public User() {
 
     }
 
-    public User(String name, ArrayList<String> todo) {
+    public User(String name) {
         this.name = name;
-        this.todo = todo;
     }
+
 }

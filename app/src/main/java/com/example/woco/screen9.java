@@ -2,6 +2,7 @@ package com.example.woco;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -11,26 +12,29 @@ import android.widget.TextView;
 public class screen9 extends AppCompatActivity {
 
     Button upTenMin, downTenMin, upMin, downMin, upTenSec, downTenSec, upSec, downSec, setTimeBtn;
-    TextView tenMinDig, minDig, tenSecDig, secDig;
+    TextView tenMinDig, minDig, tenSecDig, secDig, timeText1, timeText2, timeText3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen9);
 
-        upTenMin = (Button)findViewById(R.id.button2_1);
+        upTenMin = (Button)findViewById(R.id.button9_1);
         downTenMin = (Button)findViewById(R.id.button9_8);
-        upMin = (Button)findViewById(R.id.button3_4);
+        upMin = (Button)findViewById(R.id.button9_4);
         downMin = (Button)findViewById(R.id.button9_7);
-        upTenSec = (Button)findViewById(R.id.button3_3);
+        upTenSec = (Button)findViewById(R.id.button9_3);
         downTenSec = (Button)findViewById(R.id.button9_6);
-        upSec = (Button)findViewById(R.id.button3_2);
-        downSec = (Button)findViewById(R.id.button4_2);
+        upSec = (Button)findViewById(R.id.button9_2);
+        downSec = (Button)findViewById(R.id.button9_5);
         setTimeBtn = (Button)findViewById(R.id.button9_9);
         tenMinDig = (TextView)findViewById(R.id.textView13);
         minDig = (TextView)findViewById(R.id.textView18);
         tenSecDig = (TextView)findViewById(R.id.textView19);
         secDig = (TextView)findViewById(R.id.textView20);
+        timeText1 = (TextView)findViewById(R.id.timertext1);
+        timeText2 = (TextView)findViewById(R.id.timertext2);
+        timeText3 = (TextView)findViewById(R.id.timertext3);
 
         upTenMin.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -99,15 +103,17 @@ public class screen9 extends AppCompatActivity {
                         int sec = (int)millisUntilFinished / 1000;
                         String timeRemaining = String.valueOf(tenMin) + String.valueOf(min)
                                 + ":" + String.valueOf(tenSec) + String.valueOf(sec);
-                        /*
-                        * update text on screens 3,4,7
-                        * go back to previous screen
-                         */
+                        timeText1.setText(timeRemaining);
+                        timeText2.setText(timeRemaining);
+                        timeText3.setText(timeRemaining);
+                        Intent goto3 = new Intent(view.getContext(), Screen3.class);
+                        startActivityForResult(goto3, 0);
                     }
                     @Override
                     public void onFinish() {
                         setContentView(R.layout.activity_screen13);
-                        /* more? */
+                        Intent goto13 = new Intent(view.getContext(), screen13.class);
+                        startActivityForResult(goto13, 0);
                     }
                 }.start();
             }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WOCO</string>
+    <string name="create_rm_btn">Create Room</string>
+    <string name="join_rm_btn">Join Room</string>
 </resources>

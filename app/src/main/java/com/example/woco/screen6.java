@@ -39,16 +39,18 @@ public class screen6 extends AppCompatActivity {
         buttonAddUser.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                mDatabase.child("rooms").child(roomID).orderByChild("users").equalTo((String) username.getText()).addListenerForSingleValueEvent(new ValueEventListener() {
+                mDatabase.child("rooms").child(roomID).orderByChild("users").equalTo(String.valueOf(username.getText())).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.exists()){
-                            mDatabase.child("rooms").child(roomID).child("users").child((String) username.getText()).child("todo").child((String) todo.getText()).setValue(todo.getText());
+                            mDatabase.child("rooms").child(roomID).child("users").child(String.valueOf(username.getText())).child("todo").child(String.valueOf(todo.getText())).setValue(todo.getText());
                         }
                         else {
-                            String name = (String) username.getText();
+                            String name = String.valueOf(username.getText());
                             User person = new User(name);
                             mDatabase.child("rooms").child(roomID).child("users").child(name).setValue(person);
+                            mDatabase.child("rooms").child(roomID).child("users").child(name).child("todo").setValue(String.valueOf(todo.getText()));
+                            //mDatabase.child("rooms").child(roomID).child("users").child(name).child("todo").child(String.valueOf(todo.getText())).setValue(todo.getText());
                         }
                     }
 

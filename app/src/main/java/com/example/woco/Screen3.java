@@ -14,7 +14,7 @@ public class Screen3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen3);
-        ImageButton to6 = findViewById(R.id.imageButton2);
+        Button to6 = findViewById(R.id.button3_4);
         Button to4_1 = findViewById(R.id.button3_2);
         Button to4_2 = findViewById(R.id.button3_3);
         Button to_7 = findViewById(R.id.button3_1);

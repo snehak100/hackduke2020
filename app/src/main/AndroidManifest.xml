@@ -3,6 +3,7 @@
     package="com.example.woco">
 
     <application
+        android:hardwareAccelerated="true"
         android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

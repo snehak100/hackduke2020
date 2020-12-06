@@ -13,10 +13,9 @@ public class ScreenTwo extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.enterroomcode);
 
         Button goBtn = findViewById(R.id.button2_1);
-
-        setContentView(R.layout.enterroomcode);
 
         DisplayMetrics wh = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(wh);

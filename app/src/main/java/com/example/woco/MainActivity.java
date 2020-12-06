@@ -40,38 +40,30 @@ public class MainActivity extends AppCompatActivity {
 
         removeDataFromDatabase();
 // for opening screen 2 from screen 1
-        Button j = findViewById(R.id.button1_2);
-        Button create = findViewById(R.id.button1_1);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        createRoom = (Button)findViewById(R.id.button1_1);
 
-        create.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toHome = new Intent(v.getContext(), Screen3.class);
-                startActivityForResult(toHome, 0);
-            }
-        });
+        Button j = findViewById(R.id.button1_2);
+
 
         j.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                joinRoom();
                 startActivity(new Intent(MainActivity.this, ScreenTwo.class));
             }
 
         });
 
-        createRoom = (Button)findViewById(R.id.button1_1);
-        joinRoom = (Button)findViewById(R.id.button1_2);//move to screen 2
-
-        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         createRoom.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 createRoom();
+                Intent toHome = new Intent(view.getContext(), Screen3.class);
+                startActivityForResult(toHome, 0);
             }
         });
-
-
 
     }
 
@@ -118,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         mDatabase.addValueEventListener(roomListener);
+
+
     }
 
     private void removeDataFromDatabase(){
